@@ -1,0 +1,20 @@
+
+<h1> Howarts school of Magic</h1>
+
+<h3> All the Houses </h3>
+<h2> Never tickle a sleeping dragon! </h2>
+
+<div class="container">
+<% for home in @house %>
+<nav class="items">
+  <nav class ="text">
+    <p> <%= home.motto %>  </p>
+  <p> Name: <%=home.name %> </p>
+    <p> Score: <%=home.score %>  </p>
+</nav>
+
+  <p> <img class="logo-img" src="<%=home.logo%>" alt="<%=home.name%>" width="200px" height="200px">  </p>
+</nav>
+
+<% end %>
+</div>

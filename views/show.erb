@@ -1,0 +1,23 @@
+<h1> Howarts school of Magic</h1>
+
+<h3> All the students </h3>
+
+
+<table >
+  <tr>
+    <th>First Name:</th>
+    <th>Last Name:</th>
+    <th>Age: </th>
+    <th>House: </th>
+  </tr>
+  <% for student in @students %>
+  <tr>
+    <td><%=student.first_name %></td>
+    <td><%= student.last_name %></td>
+    <td><%= student.age %></td>
+    <td><%= student.house.name %></td>
+
+  </tr>
+  <% end %>
+
+  <table/>
